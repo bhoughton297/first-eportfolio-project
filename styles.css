@@ -108,11 +108,15 @@ display: none;
   /* display flex */
   justify-content: center;
   align-items: center;
+  transition: opacity 300ms ease;
   display: none;
+  visiblility: hidden;
+  opacity:0;
 }
 
 .menu--open .menu__backdrop{
-  display: flex;
+  visiblility: visible;
+  opacity:1;
 }
 
 .menu__links{
@@ -406,7 +410,7 @@ footer{
 }
 
 @media (max-width: 550px) {
-  .nav__links {
+  .nav__link {
     display: none;
   }
 
